@@ -13,5 +13,6 @@
         'cuenta' => 'view/usuario/usuario',
         'lista' => 'view/anime/lista_anime',
         'ver' => 'view/anime/anime',
+        'ajusteImagen' => 'view/usuario/recorte',
     ));
  ?>

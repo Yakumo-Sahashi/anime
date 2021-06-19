@@ -13,5 +13,6 @@
 <script src="<?=SERVIDOR;?>js/poper/popper.js"></script>
 <script src="<?=SERVIDOR;?>js/b4/bootstrap.js"></script>
 <script src="<?=SERVIDOR;?>js/main.js"></script>
+<script src="<?=SERVIDOR;?>js/JC/Jcrop.js"></script>
 <script src="<?=SERVIDOR?>controller/funciones_carga.js"></script>
 <script src="<?=SERVIDOR?>controller/funciones_sesion.js"></script>

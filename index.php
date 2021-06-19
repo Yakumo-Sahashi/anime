@@ -8,7 +8,7 @@
     <?php require_once 'app/dependencias.php';?>
     <title>Anime Hikari</title>
 </head>
-<body>
+<body class="<?=$bg = $_GET['view'] == "login" ? 'bg-login': 'bg-body' ;?>">
     <?php 
         session_start();
         require_once 'view/cargar.php';

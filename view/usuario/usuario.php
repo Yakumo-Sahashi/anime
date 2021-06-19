@@ -1,7 +1,6 @@
 <?php
-	if (isset($_SESSION['user'])) {
-	}else {
-		header("location:home");
+	if (!isset($_SESSION['user'])) {
+		echo '<script> window.location = "login";</script>';
 	}
 ?>
 <div class="container py-4">
@@ -63,8 +62,38 @@
 		</div>
 	</div>
 </div>
+
+<div class="modal fade" id="modal_img" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-md" role="document">
+		<div class="modal-content">
+			<div class="modal-header text-white">
+				<h5 class="modal-title" id="exampleModalLabel">Actualizar imagen de perfil</h5>
+				<button class="close" data-dismiss="modal" aria-label="Cerrar" >
+					<span aria-hidden="true" style="color:#fff">&times;</span>
+				</button>
+			</div>
+
+			<div class="modal-body">
+				<form action="model/cargarImagen.php" method="post" enctype="multipart/form-data" id="frmImagen">
+			        <label for="seleccion">Selecciona una imagen de perfil</label>
+			        <div class="input-group input-group mb-1">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="far fa-id-badge"></i></span>
+						</div>
+						<input type="file" class="form-control input" name="archivo" id="archivo">
+			        </div>
+				</form>
+			</div>
+			<div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+		        <button type="button" class="btn btn-blue" id="btnImgUsuario" data-dismiss="modal">Cargar imagen</button>
+		    </div>
+		</div>
+	</div>					
+</div>
+<script src="<?=SERVIDOR?>controller/funiones_carga_img_usuario.js"></script>
 <?php
-	require_once "modal/usuario/imagen_usuario.php";
+	/* require_once "modal/usuario/imagen_usuario.php";
 	require_once "modal/usuario/usuario_cuenta_update.php";
 	require_once "modal/usuario/actualiza_pass.php";
-?>
+?> */

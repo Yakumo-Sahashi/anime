@@ -10,7 +10,7 @@
 			<h1 class="mt-3 text-uppercase">Login</h1>
 			<hr class="bg-primary">
 			<img class="mb-2" src="img/Favico.png" width="250px" height="250px">
-			<form id="login_inic" class="form-grup mb-3 ml-3 mr-3">
+			<form id="frmLogin" class="form-grup mb-3 ml-3 mr-3">
 				<input type="text" value="1" name="funcion" hidden>
 				<div class="input-group mb-2">
 					<div class="input-group-prepend">
@@ -26,12 +26,12 @@
 				</div>
 				 
 				<div class="py-1">
-					<button type="button" class="btn btn-blue btn-block " id="log" onclick="iniciarSesion()">Iniciar Sesion</button>
+					<button type="button" class="btn btn-blue btn-block " id="btnSesion">Iniciar Sesion</button>
 					<a href="registro" class="btn btn-blue btn-block ">Registrarse</a>
 					<a href="recuperar" class="btn btn-link btn-block">¿Olvidaste tu contraseña?</a>
 				</div>
 			</form>
 		</div>
 	</div>
-</div><!-- 
-<script src="controller/funciones_sesion.js"></script> -->
+</div>
+<script src="<?=SERVIDOR?>controller/funciones_login.js"></script>

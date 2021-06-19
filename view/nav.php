@@ -20,7 +20,7 @@
           <a class="btn btn-dark" href="<?=SERVIDOR?>lista">Lista Animes</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-dark" href="<?=SERVIDOR?>recorte.php">Recortar img</a>
+          <a class="btn btn-dark" href="<?=SERVIDOR?>ajusteImagen">Recortar img</a>
         </li>
         <li class="nav-item">
 
@@ -60,7 +60,7 @@
             <a href="cuenta" class="dropdown-item btn"><i class="fas fa-user-ninja mr-1"></i> Mi Cuenta</a>
             <?php endif; ?>
             <hr>
-            <button type="button" class="dropdown-item btn btn-red text-white" onclick="cerrarSesion(3)"><i class="fas fa-power-off mr-2"></i>Cerrar Sesion</button>
+            <button type="button" class="dropdown-item btn btn-red text-white" id="btnCerrarSesion"><i class="fas fa-power-off mr-2"></i>Cerrar Sesion</button>
           </div>
       <?php else: ?>
         <li class="nav-item">

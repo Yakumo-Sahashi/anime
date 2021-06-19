@@ -1,4 +1,4 @@
-<header>
+<header <?=$visible = $_GET['view'] == "home" || $_GET['view'] == "" ? '' : 'style="display: none"';?> >
     <div class="container-fluid text-white fon2" style="background-color: rgb(0,0,0,1)";>
         <div class="row justify-content-around">
             <div class="col-md-12">

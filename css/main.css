@@ -8,8 +8,19 @@
 	--letras-btn: #fff;
 }
 
-body {
+/* body {
 	background: var(--fondo2) fixed no-repeat 0 0;
+	background-size: cover;
+	background-position: center center;
+} */
+.bg-body {
+	background: var(--fondo2) fixed no-repeat 0 0;
+	background-size: cover;
+	background-position: center center;
+}
+
+.bg-login {
+	background: var(--fondo1) fixed no-repeat 0 0;
 	background-size: cover;
 	background-position: center center;
 }
@@ -233,4 +244,8 @@ a:link, a:visited, a:active {
 
 .card-footer{
 	background-color: rgb(0,0,0,0.4);
+}
+
+.bg-card{
+	background-color: rgb(0,0,0,0.6);
 }

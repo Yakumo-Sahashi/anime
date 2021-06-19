@@ -1,18 +1,8 @@
-<style type="text/css">
-	.btn-dark{
-		background-color: rgb(0,0,0,0);
-		border: 0;
-	}
-
-	.bg-card{
-		background-color: rgb(0,0,0,0.6);
-	}
-</style>
 <!-- Inicio Pie de Pagina -->
-	<div class="container mt-5 mb-3" id="redes">
+	<div class="container mt-5 mb-3" id="redes" <?=$visible2 = $_GET['view'] == "ajusteImagen" ? 'style="display: none"': '' ;?>>
 		<div class="row">
 			<div class="col-md-9">
-				<div class="card bg-card text-white text-center">
+				<div class="bg-card card text-white text-center">
 					<div class="card-body mb-2 mt-2">
 						<div class="row mt-3 mb-3">
 							<div class="col-md-3">
