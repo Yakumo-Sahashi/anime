@@ -6,8 +6,8 @@
 <div class="container-fluid py-4">
     <div class="row justify-content-center">
         <div class="col">
-            <img src="img/usuarios/<?=$_SESSION['user']['id']?>/<?=$_SESSION['user']['id']?>.jpg" id="target" />				
+            <img loading="lazy" src="img/usuarios/<?=$_SESSION['user']['id']?>/<?=$_SESSION['user']['id']?>.jpg" id="target" />				
         </div>
     </div>
 </div>
-<script src="<?=SERVIDOR?>/controller/funciones_recorte_imagen.js"></script>
+<script src="<?=SERVIDOR?>/controller/funciones_recorte_imagen.js" type="module"></script>

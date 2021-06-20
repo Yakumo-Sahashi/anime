@@ -34,4 +34,4 @@
 		</div>
 	</div>
 </div>
-<script src="<?=SERVIDOR?>controller/funciones_login.js"></script>
+<script src="<?=SERVIDOR?>controller/funciones_login.js" type="module"></script>

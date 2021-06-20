@@ -91,7 +91,7 @@
 		</div>
 	</div>					
 </div>
-<script src="<?=SERVIDOR?>controller/funiones_carga_img_usuario.js"></script>
+<script src="<?=SERVIDOR?>controller/funiones_carga_img_usuario.js" type="module"></script>
 <?php
 	/* require_once "modal/usuario/imagen_usuario.php";
 	require_once "modal/usuario/usuario_cuenta_update.php";

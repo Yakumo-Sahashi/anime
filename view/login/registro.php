@@ -11,46 +11,49 @@
 			<hr class="bg-primary">
 		</div>
 		<div class="col-md-5 align-self-center">
-			<p class="anim">Se bienvenid@ a</p>
+			<p class="anim">Se bienvenid@</p>
 			<img src="img/Favico.png" width="250px" height="250px">
 			<p class="anim">ANIME HIKARI 光</p>
 		</div>
 		<div class="col-md-6 align-self-center">
-			<form id="regis_usuario" class="mb-3 ml-3 mr-3">
+			<form id="frmRegistroUsuario" class="form-grup mb-3 ml-3 mr-3">
 				<div class="input-group mb-3">
 					<div class="input-group-prepend">
 						<span class="input-group-text"><i class="fas fa-user-alt"></i></span>
 					</div>
-					<input type="text" class="form-control input" name="usuario" id="usuario" required placeholder="Usuario">
+					<input type="text" class="form-control input" name="usuario" id="usuario" required
+						placeholder="Usuario">
 				</div>
 
 				<div class="input-group mb-3">
 					<div class="input-group-prepend">
 						<span class="input-group-text"><i class="fas fa-lock"></i></span>
 					</div>
-					<input type="password" class="form-control input" name="password" id="password" required placeholder="Contraseña">
+					<input type="password" class="form-control input" name="password" id="password" required
+						placeholder="Contraseña">
 				</div>
 
 				<div class="input-group mb-3">
 					<div class="input-group-prepend">
 						<span title="E-mail" class="input-group-text"><i class="fas fa-at"></i></span>
 					</div>
-					<input type="email" class="form-control input" name="email" id="email" required placeholder="Correo Electronico">
+					<input type="email" class="form-control input" name="email" id="email" required
+						placeholder="Correo Electronico">
 				</div>
 
 				<div class="input-group mb-3">
 					<div class="input-group-prepend">
 						<span title="sexo" class="input-group-text">Sexo</span>
-					</div>	
+					</div>
 					<select name="sexo" id="sexo" class="custom-select input">
 						<option value="Indefinido"> Indefinido</option>
 						<option value="Masculino"> Masculino</option>
 						<option value="Femenino"> Femenino</option>
-					</select>	
+					</select>
 				</div>
 
 				<div class="py-1">
-					<button type="button" class="btn btn-blue btn-block" id="reg" onclick="registroUsuario()">Registrar</button>
+					<button class="btn btn-blue btn-block" type="button" id="btnRegistroUsuario">Registrar</button>
 					<a href="login" class="btn btn-link btn-block">¿Ya tienes una cuenta? Inicia sesion</a>
 				</div>
 			</form>
@@ -60,4 +63,4 @@
 		</div>
 	</div>
 </div>
-<script src="controller/funciones_registroU.js"></script>
+<script src="<?=SERVIDOR?>controller/funciones_registro_usuario.js" type="module"></script>

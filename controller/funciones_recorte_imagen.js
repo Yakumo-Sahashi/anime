@@ -1,3 +1,5 @@
+import Loader from './funciones_loader.js';
+const loader = new Loader();
 $(document).ready(() => {
     boton();
     var x, y, w, h;
@@ -35,14 +37,14 @@ $(document).ready(() => {
                 timerProgressBar: true,
                 value: true
               }).then((value) => {
-                opening();
+                loader.opening();
                 $.ajax({
                     url: 'model/cortar.php',
                     type: 'POST',
                     data: 'x=' + x + '&y=' + y + '&w=' + w + '&h=' + h,
                     success: (r)=> {                        
                         setTimeout(()=>{
-                            //ending();
+                            //loader.ending();
                             window.location="cuenta";
                         },1000); 
                     }
@@ -83,7 +85,7 @@ $(document).ready(() => {
         });
     }
 
-    function opening() {
+    /* function opening() {
         $('#contenedor2').css("visibility", 'visible');
         //carga.style.opacity = '0';
     }
@@ -91,5 +93,5 @@ $(document).ready(() => {
     function ending() {
         $('#contenedor2').css("visibility", 'hidden');
         $('#contenedor2').css("opacity", '0');
-    }
+    } */
 });

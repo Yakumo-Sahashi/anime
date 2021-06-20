@@ -17,7 +17,7 @@
         }
 
         function iniciarSesion(){
-            if (!empty($_POST['usuario']) && !empty(['password'])) {
+            if (!empty($_POST['usuario']) && !empty($_POST['password'])) {
 
                 $consulta = $this->conexion->prepare("SELECT id, usuario, password, email, rol, sexo, avatar FROM usuario WHERE usuario=:usuario");
                 $consulta->bindParam(':usuario',$_POST['usuario']);
@@ -34,7 +34,7 @@
                     $stmt->execute();
                     echo "2";
                 }else {
-                    echo "no actualizo";	
+                    echo "1";	
                 } 
                 $this->conexion = null;
             }

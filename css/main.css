@@ -58,13 +58,13 @@
 }
 
 .ani{
-	font-family: var(--fuente-secundaria);
+	font-family: "RusselSquare", Regular;
 	font-size: 5vw;
 	text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
 .anim{
-	font-family: var(--fuente-secundaria);
+	font-family: "RusselSquare", Regular;
 	font-size: 2vw;
 	text-shadow: -1px 0 var(--color-azul), 0 1px var(--color-azul), 1px 0 var(--color-azul), 0 -1px var(--color-azul);
 }

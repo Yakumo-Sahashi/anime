@@ -1,7 +1,9 @@
+import Loader from './funciones_loader.js';
+const loader = new Loader();
 $(document).ready(() => {
 
     function actualizarImagen() {
-        opening();
+        loader.opening();
         var Form = new FormData($('#frmImagen')[0]);
 
         $.ajax({
@@ -19,7 +21,7 @@ $(document).ready(() => {
                     }, 2000);
                 } else {
                     $('#frmImagen')[0].reset();
-                    ending();
+                    loader.ending();
                     Swal.fire({
                         title: "<div class='text-white'>Upps</div>",
                         html: "<div class='text-white'>Error al intentar subir archivo! \n\n" + r + "</div>",
@@ -37,7 +39,7 @@ $(document).ready(() => {
         });
     }
 
-    function opening() {
+    /* function opening() {
         $('#contenedor2').css("visibility", 'visible');
         //carga.style.opacity = '0';
     }
@@ -46,7 +48,7 @@ $(document).ready(() => {
         $('#contenedor2').css("visibility", 'hidden');
         $('#contenedor2').css("opacity", '0');
     }
-
+ */
 
     $('#btnImgUsuario').click(() => {
         actualizarImagen();
