@@ -2,6 +2,7 @@
 	define('NOMBRE_SERVIDOR', 'localhost');
     define("SERVIDOR", "http://localhost/animeHikari/");
     define("SQL", SERVIDOR."sql/");
+    
     define("direccion", array(
         'home' => 'view/home',
         'login' => 'view/login/login',
